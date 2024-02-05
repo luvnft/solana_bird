@@ -243,8 +243,8 @@ const App = () => {
            innovative technology of the Solana blockchain. </p>
         <h1><b>Connect Wallet to Start</b></h1>
         </div>
-       )}
-
+        )}
+  </div>
       {!showScoreboard && !loading && publicKey &&(
         <div className="game-container row">
           
