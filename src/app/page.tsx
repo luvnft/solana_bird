@@ -238,10 +238,10 @@ const App = () => {
       <AppBar />
       {!publicKey && (
         <div className="wallet-container">
-          <p>SolBird is a fun and addictive game that combines the classic gameplay of Flappy Bird with the 
-            innovative technology of the Solana blockchain. With its on-chain scoreboard, players can compete 
-            with each other for the highest score and see their names displayed on the leaderboard.</p>
-          <h1>Connect Wallet to Start</h1>
+        <img src="https://i.imgur.com/KuiGzZs.png" alt="Description of the image">
+        <p>SolBird is a fun and addictive game that combines the classic gameplay of Flappy Bird with the 
+        innovative technology of the Solana blockchain. </p>
+        <h1><b>Connect Wallet to Start</b></h1>
         </div>
       )}
 
