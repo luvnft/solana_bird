@@ -38,7 +38,7 @@ export default function AppBar() {
           justifyContent: "center",
         }}
       >
-        <span className="app-title">SOLANA BIRD</span>
+        <span className="app-title">SOLBIRD</span>
         <Image
           src="/solana_bird.png"
           width={70}

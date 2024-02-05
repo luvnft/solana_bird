@@ -43,7 +43,7 @@ export default function RootLayout({
               <meta charSet="utf-8" />
               <meta name="viewport" content="width=device-width, initial-scale=1" />
               <meta name="description" content="Flappy Bird on Solana" />
-              <title>Solana Bird</title>
+              <title>SOLBIRD</title>
             </head>
             <body className={inter.className}>{children}</body>
           </html>
