@@ -234,27 +234,25 @@ const App = () => {
   }, []);
 
   return (
-        <div class="container">
-        <AppBar />
-        {!publicKey && (
-        <div class="wallet-container">
-        <img src="https://i.imgur.com/KuiGzZs.png" alt="Description of the image">
-        <p>SolBird is a fun and addictive game that combines the classic gameplay of Flappy Bird with the 
-           innovative technology of the Solana blockchain. </p>
-        <h1><b>Connect Wallet to Start</b></h1>
+    <div className="container">
+      <AppBar />
+      {!publicKey && (
+        <div className="wallet-container">
+          <img src="https://i.imgur.com/KuiGzZs.png" alt="Description of the image" />
+          <p>SolBird is a fun and addictive game that combines the classic gameplay of Flappy Bird with the 
+            innovative technology of the Solana blockchain. </p>
+          <h1><b>Connect Wallet to Start</b></h1>
         </div>
-        )}
-  </div>
-      {!showScoreboard && !loading && publicKey &&(
+      )}
+      {!showScoreboard && !loading && publicKey && (
         <div className="game-container row">
-          
           <div className="column left">
             <h1 className="score-title">SCORE: {score}</h1>
           </div>
-
+  
           <div className="column right">
             <SelectNft />
-            
+  
             <div className="button-container">
               {gameOver && score > 0 && (
                 <button onClick={addScore} className="primary-btn">
@@ -266,7 +264,7 @@ const App = () => {
               </button>
             </div>
           </div>
-
+  
           <div className={`App ${gameOver ? "game-over" : ""}`} onClick={jump}>
             <Bird birdPosition={birdPosition} />
             {pipes.map((pipe, index) => (
@@ -278,10 +276,7 @@ const App = () => {
       )}
       {showScoreboard && !loading && (
         <div className="scoreboard-container-display">
-          <button
-            onClick={() => setShowScoreboard(false)}
-            className="primary-btn"
-          >
+          <button onClick={() => setShowScoreboard(false)} className="primary-btn">
             Hide Scoreboard
           </button>
           <ScoreboardDisplay />
@@ -294,6 +289,5 @@ const App = () => {
       )}
     </div>
   );
-};
 
-export default App;
+  export default App;
